@@ -1,0 +1,11 @@
+//Script #2: DontDestroyAudio
+
+using System.Collections; 
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioExample : MonoBehaviour {
+  void Awake() {
+    DontDestroyOnLoad(transform.gameObject);
+    }
+}
