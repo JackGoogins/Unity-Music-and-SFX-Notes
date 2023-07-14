@@ -1,0 +1,17 @@
+// Script #1: AudioExample Script 
+
+using System.Collections; 
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioExample : MonoBehaviour {
+  public AudioSource source;
+  public AudioClip clip;
+  // Update is called once per frame
+
+    void Update() {
+   	  if(Input.GetKeyDown(KeyCode.A)) {
+   		   source.PlayOneShot(clip);
+   	  } //end if statement
+    } //end void Update
+} //end public class
